@@ -2,5 +2,5 @@
 
 * [Initial page](README.md)
 * [page 2](page-2.md)
-* [test page](test_ref.md)
+* [STQL \(StackState Query Language\)](test_ref.md)
 
