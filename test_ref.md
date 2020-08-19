@@ -28,13 +28,13 @@ The basic filters described below can be combined using boolean operators to ach
 | :--- | :--- | :--- | :--- |
 | `domain` | all | ... | ... |
 | `environment` | all | ... | ... |
-| `healthstate` | all | DEVIATING, CRITICAL |... | Components with the named healthstate |
+| `healthstate` | all | DEVIATING, CRITICAL | Components with the named healthstate |
 | `label` | all | ... | Components with the named labels |
 | `layer` | all | ... | Components in the named layer |
 | `name` | all | ... | ... |
 | `type` | all | ... | ... |
 
-### Examples
+### Usage examples
 
 ```
 # Select all components with name serviceB
