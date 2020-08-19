@@ -44,7 +44,7 @@ name = "serviceB"
 layer = "application"
 
 # Select all components with name of either **appA** or **appB** that do not have a label **bck**
-name in ("aooA","appB") NOT label = "bck"
+name in ("appA","appB") NOT label = "bck"
 ```
 
 
@@ -52,12 +52,12 @@ name in ("aooA","appB") NOT label = "bck"
 | :--- | :--- |
 | `name = "serviceB"` | Select all components with name **serviceB** |
 | `layer = "application"` | Select all components in the **application** layer |
-| `name in ("aooA","appB") NOT label = "bck"` | Select all components with name of either **appA** or **appB** that do not have a label **bck** |
+| `name in ("appA","appB") NOT label = "bck"` | Select all components with name of either **appA** or **appB** that do not have a label **bck** |
 
 Select all components with name **serviceB**
 * `name = "serviceB"`
 Select all components in the **application** layer:
 * `layer = "application"`
 Select all components with name of either **appA** or **appB** that do not have a label **bck**
-* `name in ("aooA","appB") NOT label = "bck"`
+* `name in ("appA","appB") NOT label = "bck"`
 
