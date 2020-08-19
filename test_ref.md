@@ -34,7 +34,7 @@ The basic filters described below can be combined using boolean operators to ach
 | `name` | all | ... | ... |
 | `type` | all | ... | ... |
 
-## Examples
+### Examples
 
 ```
 # Select all components with name serviceB
