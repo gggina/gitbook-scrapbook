@@ -43,7 +43,7 @@ name = "serviceB"
 # Select all components in the "application" layer:
 layer = "application"
 
-# Select all components with name of either "appA" or "appB" that do not have a label "bck"
+# Select all components named either "appA" or "appB" that do not have a label "bck"
 name in ("appA","appB") NOT label = "bck"
 ```
 
