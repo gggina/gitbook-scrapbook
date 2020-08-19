@@ -37,13 +37,13 @@ The basic filters described below can be combined using boolean operators to ach
 
 ```
 # Select all components with name **serviceB**
-`name = "serviceB"`
+name = "serviceB"
 
 # Select all components in the **application** layer:
-`layer = "application"`
+layer = "application"
 
 # Select all components with name of either **appA** or **appB** that do not have a label **bck**
-`name in ("aooA","appB") NOT label = "bck"
+name in ("aooA","appB") NOT label = "bck"
 ```
 
 
