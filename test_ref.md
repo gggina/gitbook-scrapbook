@@ -78,7 +78,9 @@ withNeighborsOf(components=(), levels=, direction-)
 #### Examples
 
 ```
-# Select all components in the application layer that have a healthstate of either "CRITICAL" or "DEVIATING". Also include components with names "appA" or "appB" and their neighbors.
+# Select all components in the application layer that have
+# a healthstate of either "CRITICAL" or "DEVIATING".
+# Also include components with names "appA" or "appB" and their neighbors.
 
 layer = "application"
   AND (healthstate = "CRITICAL" OR healthstate = "DEVIATING")
