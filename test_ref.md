@@ -85,6 +85,6 @@ layer = "application"
   OR withNeighborsOf(components = (name in ("appA","appB")))
 ```
 
-### withCauseOf 'DEPRECATED'
+### withCauseOf `DEPRECATED`
 
 This functionality is depricated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
