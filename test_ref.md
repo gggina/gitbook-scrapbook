@@ -38,7 +38,7 @@ The basic filters described below can be combined using boolean operators to ach
 | `name` | all | ... | ... |
 | `type` | all | ... | ... |
 
-#### Example usage
+#### Examples
 
 ```text
 # Select all components with name "serviceB"
@@ -51,21 +51,38 @@ layer = "application"
 name in ("appA","appB") NOT label = "bck"
 ```
 
-| STQL | Description |
-| :--- | :--- |
-| `name = "serviceB"` | Select all components with name **serviceB** |
-| `layer = "application"` | Select all components in the **application** layer |
-| `name in ("appA","appB") NOT label = "bck"` | Select all components with name of either **appA** or **appB** that do not have a label **bck** |
+## STQL functions
 
-Select all components with name **serviceB**
+STQL functions expand query results with related components.
 
-* `name = "serviceB"`
+### withNeighborsOf
 
-  Select all components in the **application** layer:
+The function **withNeighborsOf** expands STQL query output, adding connected components in the specified direction(s). The number of topology levels included can be adjusted up to a maximum of 15.
 
-* `layer = "application"`
+#### Usage
 
-  Select all components with name of either **appA** or **appB** that do not have a label **bck**
+```
+withNeighborsOf(components=(), levels=, direction-)
+```
 
-* `name in ("appA","appB") NOT label = "bck"`
+#### Paramaeters
 
+| Filter | Default | Allowed values | Description |
+| :--- | :--- | :--- | :--- |
+| 'components' | all | (<componentFilter>) | The component(s) for which the neighbors will be returned, see [Component filters](). |
+| 'levels' | 1 | all, [1:14] | The number of levels to include in the output. Use "all" to display all available levels (maximum 15) |
+| 'direction' | both | up, down, both |
+* up - only components that depend on the named component(s) will be added
+* down - only dependencies of the named component(s) will be added |
+
+#### Examples
+
+```
+# Select all components in the application layer that have a healthstate of either "CRITICAL" or "DEVIATING". Also include components with names "appA" or "appB" and their neighbors.
+
+layer = "application" AND (healthstate = "CRITICAL" OR healthstate = "DEVIATING") OR withNeighborsOf(components = (name in ("appA","appB")))
+```
+
+
+
+### withCauseOf
