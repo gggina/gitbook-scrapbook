@@ -24,9 +24,9 @@ Component filters are used in two ways in STQL:
 * Define the set of components to be included in the query output.
 * Specify the set of components to be handled by an in-built STQL function.
 
-The basic filters described below can be combined using boolean operators to achieve complex selections of components. Note that boolean operators will be executed in the standard order: NOT, OR, AND. You can change the order of operations by grouping sections of a query with parentheses \(...\).
+The filters described below can be combined using boolean operators to achieve complex selections of components. Note that boolean operators will be executed in the standard order: NOT, OR, AND. You can change the order of operations by grouping sections of a query with parentheses \(...\).
 
-### Basic filters
+### filters
 
 | Filter | Default | Allowed values | Description |
 | :--- | :--- | :--- | :--- |
