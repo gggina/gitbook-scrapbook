@@ -86,3 +86,20 @@ layer = "application"
 ```
 
 ### withCauseOf
+
+the funtion **withCauseOf** expands STQL query output, adding components that have caused a component in the original STQL query output to have a health state of DEVIATING or CRITICAL. You can choose to add only the root cause component or to track the full path from root cause through to the problem component.
+
+#### Usage
+
+```text
+withCauseOf(components=(), causeOnly="")
+```
+
+#### Parameters
+
+| Filter | Default | Allowed values | Description |
+| :--- | :--- | :--- | :--- |
+| `components` | all | (componentFilter) | The component(s) for which the neighbors will be returned. see [Component filters]() |
+| `causeOnly` | False | True, False | **False -** all components on the path to the root cause will be added. <br>**True -** only the root cause component will be added |
+
+#### Examples
