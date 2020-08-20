@@ -26,7 +26,7 @@ Component filters are used in two ways in STQL:
 
 The filters described below can be combined using boolean operators to achieve complex selections of components. Note that boolean operators will be executed in the standard order: NOT, OR, AND. You can change the order of operations by grouping sections of a query with parentheses \(...\).
 
-### filters
+### Filters
 
 | Filter | Default | Allowed values | Description |
 | :--- | :--- | :--- | :--- |
@@ -57,7 +57,7 @@ STQL functions expand query results with related components.
 
 ### withNeighborsOf
 
-The function **withNeighborsOf** expands STQL query output, adding connected components in the specified direction\(s\). The number of topology levels included can be adjusted up to a maximum of 15.
+The function **withNeighborsOf** extends STQL query output, adding connected components in the specified direction\(s\). The number of topology levels included can be adjusted up to a maximum of 15.
 
 #### Usage
 
@@ -85,21 +85,6 @@ layer = "application"
   OR withNeighborsOf(components = (name in ("appA","appB")))
 ```
 
-### withCauseOf
+### withCauseOf 'DEPRECATED'
 
-the funtion **withCauseOf** expands STQL query output, adding components that have caused a component in the original STQL query output to have a health state of DEVIATING or CRITICAL. You can choose to add only the root cause component or to track the full path from root cause through to the problem component.
-
-#### Usage
-
-```text
-withCauseOf(components=(), causeOnly="")
-```
-
-#### Parameters
-
-| Filter | Default | Allowed values | Description |
-| :--- | :--- | :--- | :--- |
-| `components` | all | (componentFilter) | The component(s) for which the neighbors will be returned. see [Component filters]() |
-| `causeOnly` | False | True, False | **False -** all components on the path to the root cause will be added. <br>**True -** only the root cause component will be added |
-
-#### Examples
+This functionality is depricated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
