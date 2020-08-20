@@ -87,4 +87,4 @@ layer = "application"
 
 ### withCauseOf `DEPRECATED`
 
-This functionality is depricated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
+This functionality is deprecated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
