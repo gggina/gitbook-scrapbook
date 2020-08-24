@@ -1,16 +1,9 @@
 # Welcome to the StackState Docs!
 
-bgcolor=#101F33
-
 <table>
-  <thead>
-    <td></td>
-    <td></td>
-    <td></td>
-  </thead>
   <tbody>
     <tr>
-      <td bgcolor=#101F33>GET STARTED</td>
+      <td>GET STARTED</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
