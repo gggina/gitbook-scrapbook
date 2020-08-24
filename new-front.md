@@ -2,7 +2,13 @@
 
 
 <table>
-
+  <thead>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>    
+  </tr>
+  </thead>
   <tbody>
 
     <tr>
@@ -37,10 +43,10 @@
     </tr>
 
     <tr>
-    <td colspan=3>TROUBLESHOOTING</td>
+    <td colspan="3">TROUBLESHOOTING</td>
     </tr>
     <tr>
-    <td colspan=3>
+    <td colspan="3">
     Top questions:
     <ul>
       <li />Help with installation
