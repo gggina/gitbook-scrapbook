@@ -2,15 +2,7 @@
 
 
 <table>
-  <thead>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>    
-  </tr>
-  </thead>
   <tbody>
-
     <tr>
     <td>GET STARTED</td>
     <td>CUSTOMIZE</td>
@@ -41,12 +33,16 @@
       <li />Query the 4T data model
     </td>
     </tr>
+    </tbody>
+  </table>
 
+<table>
+  <tbody>
     <tr>
-    <td colspan="3">TROUBLESHOOTING</td>
+    <td>TROUBLESHOOTING</td>
     </tr>
     <tr>
-    <td colspan="3">
+    <td>
     Top questions:
     <ul>
       <li />Help with installation
