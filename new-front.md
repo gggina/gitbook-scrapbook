@@ -15,7 +15,7 @@
         <li />Install a StackPack
         <li />Browse your IT landscape
       </ol>
-      <p align="right">more</p>
+      <p align="right">more...</p>
     </td>
     <td>
     Popular customizations:
