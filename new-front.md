@@ -5,7 +5,7 @@
 <table>
   <tbody>
     <tr>
-      <td>GET STARTED<</td>
+      <td>GET STARTED</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
@@ -57,7 +57,7 @@
           <ul>
             <li />Help with installation
             <li />Help with upgrades
-            <li />[StackState support site](https://support.stackstate.com/).<br />
+            <li /><a href="https://support.stackstate.com/">StackState support site</a>.<br />
           </ul>
         </td>
       </tr>
