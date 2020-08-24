@@ -1,11 +1,11 @@
 # Welcome to the StackState Docs!
 
-
+## Quick navigation
 
 <table>
   <tbody>
     <tr>
-      <td><h2>GET STARTED</h2></td>
+      <td>GET STARTED<</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
@@ -57,7 +57,7 @@
           <ul>
             <li />Help with installation
             <li />Help with upgrades
-            <li />StackState support site<br />
+            <li />[StackState support site](https://support.stackstate.com/).<br />
           </ul>
         </td>
       </tr>
@@ -81,3 +81,13 @@
       </tr>
     </tbody>
   </table>
+
+## Can't find what you're looking for?
+
+**Search for it!** You can use the search bar at the top right of this page to search through the StackState documentation pages.
+If you believe any documentation is missing, please let us know on the [StackState support site](https://support.stackstate.com/).
+
+## StackState support site
+
+Any questions? We love to help!
+Find our support team on the [StackState support site](https://support.stackstate.com/).
