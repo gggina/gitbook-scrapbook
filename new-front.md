@@ -21,7 +21,7 @@
         <li />Set up alerting
         <li />Create component actions
         <li />Configure AuthN and AuthZ
-        <li />More customizations
+        <li />More customizations >>>
       </ul>
     </td>
     <td>
@@ -29,7 +29,7 @@
         <li />Browse topology
         <li />Create Views
         <li />Query the 4T data model
-        <li />More actions
+        <li />More actions >>>
       </ul>
     </td>
     </tr>
@@ -44,14 +44,34 @@
       <tr>
         <td>
           <ul>
-            <li />The 4T data model
+            <li />4T data model
             <li />Components and relations
-            <li />StackState glossary
+            <li />Glossary
+            <li />More concepts >>>
           </ul>
         </td>
       </tr>
     </tbody>
   </table>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>DEVELOPER DOCS</td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li />StackState scripting language (STSL)
+            <li />StackPack tutorial
+            <li />Developing agent checks
+            <li />More tutorials and reference pages >>>
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
 
 <table>
   <tbody>
