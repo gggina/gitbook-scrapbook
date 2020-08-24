@@ -3,6 +3,11 @@
 bgcolor=#101F33
 
 <table>
+  <thead>
+    <td></td>
+    <td></td>
+    <td></td>
+  </thead>
   <tbody>
     <tr>
       <td bgcolor=#101F33>GET STARTED</td>
