@@ -20,9 +20,9 @@
     </td>
     <td>
       <ul>
-        <li /><a href="">Set up <a href="">alerting</a>
-        <li /><a href="">Create <a href="">component actions</a>
-        <li /><a href="">Configure <a href="">AuthN and AuthZ</a>
+        <li />Set up <a href="">alerting</a>
+        <li />Create <a href="">component actions</a>
+        <li />Configure <a href="">AuthN and AuthZ</a>
         <li /><a href="">More customizations >>></a>
       </ul>
     </td>
