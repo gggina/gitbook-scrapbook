@@ -39,24 +39,6 @@
   <table>
     <tbody>
       <tr>
-        <td>LEARN ABOUT STACKSTATE</td>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li />4T data model
-            <li />Components and relations
-            <li />Glossary
-            <li />More concepts >>>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <table>
-    <tbody>
-      <tr>
         <td>DEVELOPER DOCS</td>
         <td>TROUBLESHOOTING</td>
       </tr>
@@ -66,7 +48,7 @@
             <li />StackState scripting language (STSL)
             <li />StackPack tutorial
             <li />Developing agent checks
-            <li />More tutorials and reference pages >>>
+            <li />More tutorials and reference >>>
           </ul>
         </td>
         <td>
@@ -74,6 +56,24 @@
             <li />Help with installation
             <li />Help with upgrades
             <li />StackState support
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>LEARN ABOUT STACKSTATE</td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li />4T data model
+            <li />Components and relations
+            <li />Glossary
+            <li />More concepts >>>
           </ul>
         </td>
       </tr>
