@@ -55,7 +55,7 @@
           <ul>
             <li />Help with installation
             <li />Help with upgrades
-            <li />StackState support
+            <li />StackState support site<br />
           </ul>
         </td>
       </tr>
