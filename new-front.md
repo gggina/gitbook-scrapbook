@@ -36,7 +36,7 @@
     </tbody>
   </table>
 
-### Understand StackState
+#### Understand StackState
 
 Learn about the fundamental concepts:
 <ul>
