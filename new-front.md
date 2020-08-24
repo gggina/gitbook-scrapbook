@@ -20,9 +20,9 @@
     </td>
     <td>
       <ul>
-        <li />Set up <a href="">alerting</a>
-        <li />Create <a href="">component actions</a>
-        <li />Configure <a href="">AuthN and AuthZ</a>
+        <li /><a href="">Set up alerting</a>
+        <li /><a href="">Create component actions</a>
+        <li /><a href="">Configure AuthN and AuthZ</a>
         <li /><a href="">More customizations >>></a>
       </ul>
     </td>
@@ -47,16 +47,16 @@
       <tr>
         <td>
           <ul>
-            <li />StackState scripting language (STSL)
-            <li />StackPack tutorial
-            <li />Developing agent checks
-            <li />More tutorials and reference docs >>>
+            <li /><a href="">StackState scripting language (STSL)</a>
+            <li /><a href="">StackPack tutorial</a>
+            <li /><a href="">Developing agent checks</a>
+            <li /><a href="">More tutorials and reference docs >>></a>
           </ul>
         </td>
         <td>
           <ul>
-            <li />Help with installation
-            <li />Help with upgrades
+            <li /><a href="">Help with installation</a>
+            <li /><a href="">Help with upgrades</a>
             <li /><a href="https://support.stackstate.com/">StackState support site</a><br />
           </ul>
         </td>
