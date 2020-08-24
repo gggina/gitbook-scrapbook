@@ -13,9 +13,8 @@
       <ol>
         <li />Get StackState running
         <li />Install a StackPack
-        <li />Browse your IT landscape
+        <li />Browse your IT landscape<br />
       </ol>
-      <p align="right">more...</p>
     </td>
     <td>
     Popular customizations:
@@ -23,6 +22,7 @@
         <li />Set up alerting
         <li />Create component actions
         <li />Configure AuthN and AuthZ
+        <li />Read more
       </ul>
     </td>
     <td>
@@ -31,6 +31,7 @@
         <li />Browse topology
         <li />Create Views
         <li />Query the 4T data model
+        <li />Read more
       </ul>
     </td>
     </tr>
