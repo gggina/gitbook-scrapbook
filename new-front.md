@@ -13,25 +13,25 @@
     <td>
     Get started in three steps:
       <ol>
-        <li />Run StackState
-        <li />Install a StackPack
-        <li />Browse your IT landscape
+        <li /><a href="">Run StackState</a>
+        <li /><a href="">Install a StackPack</a>
+        <li /><a href="">Browse your IT landscape</a>
       </ol>
     </td>
     <td>
       <ul>
-        <li />Set up <a href="">alerting</a>
-        <li />Create <a href="">component actions</a>
-        <li />Configure <a href="">AuthN and AuthZ</a>
-        <li />More customizations >>>
+        <li /><a href="">Set up <a href="">alerting</a>
+        <li /><a href="">Create <a href="">component actions</a>
+        <li /><a href="">Configure <a href="">AuthN and AuthZ</a>
+        <li /><a href="">More customizations >>></a>
       </ul>
     </td>
     <td>
       <ul>
-        <li />Browse topology
-        <li />Create Views
-        <li />Query the 4T data model
-        <li />More actions >>>
+        <li /><a href="">Browse topology</a>
+        <li /><a href="">Create Views</a>
+        <li /><a href="">Query the 4T data model</a>
+        <li /><a href="">More actions >>></a>
       </ul>
     </td>
     </tr>
