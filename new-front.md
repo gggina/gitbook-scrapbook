@@ -84,8 +84,7 @@
 
 ## Can't find what you're looking for?
 
-**Search for it!** Use the search bar at the top right of this page to search through the StackState documentation pages.
-If you believe any documentation is missing, please let us know on the [StackState support site](https://support.stackstate.com/).
+**Search for it!** Use the search bar at the top right of this page to search through the documentation pages. If you believe any documentation is missing, please let us know on the [StackState support site](https://support.stackstate.com/).
 
 ## StackState support site
 
