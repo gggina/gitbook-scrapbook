@@ -4,7 +4,7 @@
 <table>
   <tbody>
     <tr>
-      <td>GET STARTED</td>
+      <td style="background-color:#101F33;color:white;">GET STARTED</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
