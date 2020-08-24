@@ -1,10 +1,11 @@
 # Welcome to the StackState Docs!
 
+bgcolor=#101F33
 
 <table>
   <tbody>
     <tr>
-      <td style="background-color:#101F33;color:white;">GET STARTED</td>
+      <td bgcolor=#101F33>GET STARTED</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
