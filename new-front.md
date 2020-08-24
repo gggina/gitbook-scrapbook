@@ -72,10 +72,10 @@
       <tr>
         <td>
           <ul>
-            <li />4T data model
-            <li />Components and relations
-            <li />Glossary
-            <li />More concepts >>>
+            <li /><a href="">4T data model</a>
+            <li /><a href="">Components and relations</a>
+            <li /><a href="">Glossary</a>
+            <li /><a href="">More concepts >>></a>
           </ul>
         </td>
       </tr>
@@ -84,7 +84,7 @@
 
 ## Can't find what you're looking for?
 
-**Search for it!** You can use the search bar at the top right of this page to search through the StackState documentation pages.
+**Search for it!** Use the search bar at the top right of this page to search through the StackState documentation pages.
 If you believe any documentation is missing, please let us know on the [StackState support site](https://support.stackstate.com/).
 
 ## StackState support site
