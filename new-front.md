@@ -4,33 +4,34 @@
 <table>
   <tbody>
     <tr>
-    <td>GET STARTED</td>
-    <td>CUSTOMIZE</td>
-    <td>USE</td>
+      <td>GET STARTED</td>
+      <td>CUSTOMIZE</td>
+      <td>USE</td>
     </tr>
     <tr>
     <td>
     Get started in three steps:
-    <ol>
-      <li />Get StackState running
-      <li />Install a StackPack
-      <li />Browse your IT landscape
-    </ol>
+      <ol>
+        <li />Get StackState running
+        <li />Install a StackPack
+        <li />Browse your IT landscape
+      </ol>
     </td>
     <td>
     Popular customizations:
-    <ul>
-      <li />Set up alerting
-      <li />Create component actions
-      <li />Configure AuthN and AuthZ
-    </ul>
+      <ul>
+        <li />Set up alerting
+        <li />Create component actions
+        <li />Configure AuthN and AuthZ
+      </ul>
     </td>
     <td>
-    Get started in three steps:
-    <ol>
-      <li />Browse topology
-      <li />Create Views
-      <li />Query the 4T data model
+    Top actions:
+      <ul>
+        <li />Browse topology
+        <li />Create Views
+        <li />Query the 4T data model
+      </ul>
     </td>
     </tr>
     </tbody>
