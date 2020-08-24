@@ -13,25 +13,23 @@
       <ol>
         <li />Get StackState running
         <li />Install a StackPack
-        <li />Browse your IT landscape<br />
+        <li />Browse your IT landscape
       </ol>
     </td>
     <td>
-    Popular customizations:
       <ul>
         <li />Set up alerting
         <li />Create component actions
         <li />Configure AuthN and AuthZ
-        <li />Read more
+        <li />More customizations
       </ul>
     </td>
     <td>
-    Top actions:
       <ul>
         <li />Browse topology
         <li />Create Views
         <li />Query the 4T data model
-        <li />Read more
+        <li />More actions
       </ul>
     </td>
     </tr>
