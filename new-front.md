@@ -8,6 +8,7 @@
     <tr>
     <td>GET STARTED</td>
     <td>CUSTOMIZE</td>
+    <td>USE</td>
     <td></td>
     </tr>
     <tr>
@@ -20,7 +21,7 @@
     </ol>
     </td>
     <td>
-    Popular customization steps:
+    Popular customizations:
     <ul>
       <li />Set up alerting
       <li />Create component actions
@@ -30,14 +31,14 @@
     <td>
     Get started in three steps:
     <ol>
-      <li />Get StackState running
-      <li />Install a StackPack
-      <li />Browse your IT landscape
+      <li />Browse topology
+      <li />Create Views
+      <li />Query the 4T data model
     </td>
     </tr>
 
     <tr>
-    <td>TROUBLESHOOTING</td>
+    <td colspan=3>TROUBLESHOOTING</td>
     </tr>
     <tr>
     <td>
