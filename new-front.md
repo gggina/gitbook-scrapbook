@@ -40,7 +40,7 @@
     <td colspan=3>TROUBLESHOOTING</td>
     </tr>
     <tr>
-    <td>
+    <td colspan=3>
     Top questions:
     <ul>
       <li />Help with installation
