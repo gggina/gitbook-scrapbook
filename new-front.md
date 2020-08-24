@@ -36,16 +36,22 @@
     </tbody>
   </table>
 
-#### Understand StackState
-
-Learn about the fundamental concepts:
-<ul>
-  <li />4T data model
-  <li />Components and relations
-  <li />StackState glossary
-</ul>
-
-
+  <table>
+    <tbody>
+      <tr>
+        <td>LEARN ABOUT STACKSTATE</td>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li />The 4T data model
+            <li />Components and relations
+            <li />StackState glossary
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 <table>
   <tbody>
