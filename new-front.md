@@ -37,7 +37,7 @@
     </tr>
 
     <tr>
-    <td>TROUBLESHOOTING</td>
+    <td colspan=3>TROUBLESHOOTING</td>
     </tr>
     <tr>
     <td>
