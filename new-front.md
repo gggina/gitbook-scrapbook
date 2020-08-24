@@ -1,9 +1,12 @@
 # Welcome to the StackState Docs!
 
+## test
+
+
 <table>
   <tbody>
     <tr>
-      <td>GET STARTED</td>
+      <td>##GET STARTED</td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
@@ -48,7 +51,7 @@
             <li />StackState scripting language (STSL)
             <li />StackPack tutorial
             <li />Developing agent checks
-            <li />More tutorials and reference >>>
+            <li />More tutorials and reference docs >>>
           </ul>
         </td>
         <td>
