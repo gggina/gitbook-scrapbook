@@ -20,9 +20,9 @@
     </td>
     <td>
       <ul>
-        <li />Set up alerting
-        <li />Create component actions
-        <li />Configure AuthN and AuthZ
+        <li />Set up <a href="">alerting</a>
+        <li />Create <a href="">component actions</a>
+        <li />Configure <a href="">AuthN and AuthZ</a>
         <li />More customizations >>>
       </ul>
     </td>
@@ -57,7 +57,7 @@
           <ul>
             <li />Help with installation
             <li />Help with upgrades
-            <li /><a href="https://support.stackstate.com/">StackState support site</a>.<br />
+            <li /><a href="https://support.stackstate.com/">StackState support site</a><br />
           </ul>
         </td>
       </tr>
