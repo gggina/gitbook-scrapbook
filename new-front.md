@@ -58,6 +58,7 @@
     <tbody>
       <tr>
         <td>DEVELOPER DOCS</td>
+        <td>TROUBLESHOOTING</td>
       </tr>
       <tr>
         <td>
@@ -68,26 +69,13 @@
             <li />More tutorials and reference pages >>>
           </ul>
         </td>
+        <td>
+          <ul>
+            <li />Help with installation
+            <li />Help with upgrades
+            <li />StackState support
+          </ul>
+        </td>
       </tr>
     </tbody>
   </table>
-
-
-<table>
-  <tbody>
-    <tr>
-    <td>TROUBLESHOOTING</td>
-    </tr>
-    <tr>
-    <td>
-    Top questions:
-    <ul>
-      <li />Help with installation
-      <li />Help with upgrades
-      <li />StackState support
-    </ul>
-    </td>
-    </tr>
-
-  </tbody>
-</table>
