@@ -1,12 +1,11 @@
 # Welcome to the StackState Docs!
 
-## test
 
 
 <table>
   <tbody>
     <tr>
-      <td>##GET STARTED</td>
+      <td><h2>GET STARTED</h2></td>
       <td>CUSTOMIZE</td>
       <td>USE</td>
     </tr>
