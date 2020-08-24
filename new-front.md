@@ -11,7 +11,7 @@
     <td>
     Get started in three steps:
       <ol>
-        <li />Get StackState running
+        <li />Run StackState
         <li />Install a StackPack
         <li />Browse your IT landscape
       </ol>
