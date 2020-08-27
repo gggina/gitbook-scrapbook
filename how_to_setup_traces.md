@@ -15,7 +15,7 @@ Once the StackState Agent V2 StackPack is installed, you can configure the assoc
 - **Java APM** - provides tracing support for Java JVM based systems.
 - **DotNet APM** - runs in-process to instrument your applications and send traces to StackState.
 - **Traefik** - adds topology and telemetry information from Traefik.
-- **AWS xray** - collects tracing information from the AWS built in distributed tracing system.
+- **AWS X-ray** - collects tracing information from the AWS built in distributed tracing system.
 
 Full configuration details for each available StackState Agent V2 integration are included in StackState. These can be accessed from the StackPacks page.
 
