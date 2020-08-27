@@ -17,10 +17,10 @@ Once the StackState Agent V2 StackPack is installed, you can configure integrati
 - **Traefik** - adds topology and telemetry information from Traefik.
 - **AWS X-ray** - collects tracing information from the in-built AWS distributed tracing system.
 
-Full configuration details for each available StackState Agent V2 integration are included in StackState. These can be accessed from the StackPacks page.
+Full configuration details for each available StackState Agent V2 integration are included in StackState. These can be accessed from the StackPacks page:
 
 1. Go to the **StackPacks** page in the StackState GUI.
-2. Click **Tracing** from the tags listed at the top of the page. This will filter the listed StackPacks to show only those used for traces.
-3. Click on the integration you want to configure and follow the instructions provided to set up traces.
+2. Click **Tracing** in the tags list at the top of the page - this will filter the displayed StackPacks to show only those used for traces.
+3. Click on the StackState Agent V2 integration you want to configure and follow the instructions provided to start receiving trace data.
 
 ## Still not able to see traces?
