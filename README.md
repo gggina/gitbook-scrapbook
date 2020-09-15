@@ -2,7 +2,7 @@
 description: 'Hello world, Gina!'
 ---
 
-# Initial page
+# Introduction
 
 
 
