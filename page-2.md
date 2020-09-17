@@ -1,3 +1,17 @@
+---
+description: 'Hello world, Gina!'
+---
+
+# Initial page
+
+
+
+
+
+{% hint style="danger" %}
+BRANCH STARTED AS: latest
+{% endhint %}
+
 # page 2
 
 hello page2

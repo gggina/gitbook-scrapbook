@@ -1,3 +1,17 @@
+---
+title: STQL reference
+kind: Documentation
+aliases:
+  - /reference/stql_reference/
+listorder: 1
+---
+
+# STQL \(StackState Query Language\)
+
+{% hint style="danger" %}
+BRANCH STARTED AS: latest
+{% endhint %}
+
 # How to set up traces
 
 This how-to describes the steps to set up traces that can be viewed in the StackState Traces perspective.

@@ -1,3 +1,7 @@
+{% hint style="danger" %}
+BRANCH STARTED AS: latest
+{% endhint %}
+
 # Table of contents
 
 * [Welcome to the StackState Docs!](new-front.md)
