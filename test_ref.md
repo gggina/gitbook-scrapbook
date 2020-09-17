@@ -8,6 +8,10 @@ listorder: 1
 
 # STQL \(StackState Query Language\)
 
+{% hint style="danger" %}
+BRANCH STARTED AS: Master
+{% endhint %}
+
 ## Overview
 
 The built-in StackState Query Language \(STQL\) can be used to run advanced queries in the StackState Topology and Analytics environments.
