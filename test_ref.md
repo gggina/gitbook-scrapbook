@@ -9,7 +9,7 @@ listorder: 1
 # STQL \(StackState Query Language\)
 
 {% hint style="danger" %}
-BRANCH RENAMED: g4.1
+NEW BRANCH FROM master NAMED: g4.1
 {% endhint %}
 
 {% hint style="danger" %}
