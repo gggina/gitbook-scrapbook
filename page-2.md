@@ -2,7 +2,9 @@
 description: 'Hello world, Gina!'
 ---
 
-# Initial page
+# page 2
+
+## Initial page
 
 {% hint style="danger" %}
 BRANCH RENAMED: g4.1
@@ -12,7 +14,7 @@ BRANCH RENAMED: g4.1
 BRANCH STARTED AS: Master
 {% endhint %}
 
-# page 2
+## page 2
 
 hello page2
 

@@ -12,8 +12,7 @@ BRANCH RENAMED: g4.1
 BRANCH STARTED AS: Master
 {% endhint %}
 
-
-
 | x |  |
 | :--- | :--- |
 | x | y |
+
