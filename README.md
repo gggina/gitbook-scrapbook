@@ -2,11 +2,7 @@
 description: 'Hello world, Gina!'
 ---
 
-# Initial page
-
-
-
-
+# Introduction
 
 {% hint style="danger" %}
 BRANCH STARTED AS: latest
@@ -15,6 +11,4 @@ BRANCH STARTED AS: latest
 | x |  |
 | :--- | :--- |
 | x | y |
-
-
 
