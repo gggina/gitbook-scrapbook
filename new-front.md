@@ -2,11 +2,9 @@
 description: 'Hello world, Gina!'
 ---
 
-# Initial page
+# Welcome to the StackState Docs!
 
-
-
-
+## Initial page
 
 {% hint style="danger" %}
 BRANCH RENAMED: g4.0
@@ -16,95 +14,125 @@ BRANCH RENAMED: g4.0
 BRANCH STARTED AS: latest
 {% endhint %}
 
-# Welcome to the StackState Docs!
+## Welcome to the StackState Docs!
 
-## Quick navigation
+### Quick navigation
 
 <table>
+  <thead>
+    <tr>
+      <th style="text-align:left">GET STARTED</th>
+      <th style="text-align:left">CUSTOMIZE</th>
+      <th style="text-align:left">USE</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>GET STARTED</td>
-      <td>CUSTOMIZE</td>
-      <td>USE</td>
+      <td style="text-align:left">
+        <p>Get started in three steps:</p>
+        <ol>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/setup/installation/README.md">Run StackState</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/integrations/README.md">Install a StackPack</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/perspectives/topology-perspective/README.md">Browse your IT landscape</a>
+          </li>
+        </ol>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/alerting.md">Set up alerting</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/configure/component_actions.md">Create component actions</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/configure/how_to_set_up_roles.md">Configure AuthN and AuthZ</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/configure/README.md">More customizations &gt;&gt;&gt;</a>
+          </li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/perspectives/topology-perspective/README.md">Browse topology</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/views.md">Create Views</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/queries.md">Query the 4T data model</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/use/README.md">More actions &gt;&gt;&gt;</a>
+          </li>
+        </ul>
+      </td>
     </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
     <tr>
-    <td>
-    Get started in three steps:
-      <ol>
-        <li /><a href="setup/installation/">Run StackState</a>
-        <li /><a href="integrations/">Install a StackPack</a>
-        <li /><a href="use/perspectives/topology-perspective">Browse your IT landscape</a>
-      </ol>
-    </td>
-    <td>
-      <ul>
-        <li /><a href="use/alerting.md">Set up alerting</a>
-        <li /><a href="configure/component_actions.md">Create component actions</a>
-        <li /><a href="configure/how_to_set_up_roles.md">Configure AuthN and AuthZ</a>
-        <li /><a href="configure/">More customizations >>></a>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li /><a href="use/perspectives/topology-perspective">Browse topology</a>
-        <li /><a href="use/views.md">Create Views</a>
-        <li /><a href="use/queries.md">Query the 4T data model</a>
-        <li /><a href="use/">More actions >>></a>
-      </ul>
-    </td>
+      <th style="text-align:left">DEVELOPER DOCS</th>
+      <th style="text-align:left">TROUBLESHOOTING</th>
     </tr>
-    </tbody>
-  </table>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <ul>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/develop/scripting/README.md">StackState Scripting Language (STSL)</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/develop/tutorials/basic_stackpack_tutorial.md">StackPack tutorial</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/develop/agent_check/checks_in_agent_v2.md">Developing agent checks</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/develop/README.md">More tutorials and reference docs &gt;&gt;&gt;</a>
+          </li>
+        </ul>
+      </td>
+      <td style="text-align:left">
+        <ul>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/setup/installation/troubleshooting.md">Help with installation</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/setup/upgrading.md">Help with upgrades</a>
+          </li>
+          <li><a href="https://support.stackstate.com/">StackState support site</a>
+            <br
+            />
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  <table>
-    <tbody>
-      <tr>
-        <td>DEVELOPER DOCS</td>
-        <td>TROUBLESHOOTING</td>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li /><a href="develop/scripting/">StackState Scripting Language (STSL)</a>
-            <li /><a href="develop/tutorials/basic_stackpack_tutorial.md">StackPack tutorial</a>
-            <li /><a href="develop/agent_check/checks_in_agent_v2.md">Developing agent checks</a>
-            <li /><a href="develop/">More tutorials and reference docs >>></a>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li /><a href="setup/installation/troubleshooting.md">Help with installation</a>
-            <li /><a href="setup/upgrading.md">Help with upgrades</a>
-            <li /><a href="https://support.stackstate.com/">StackState support site</a><br />
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">LEARN ABOUT STACKSTATE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <ul>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/concepts/4t_data_model.md">4T data model</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/concepts/components_and_relations.md">Components and relations</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/concepts/glossary.md">Glossary</a>
+          </li>
+          <li><a href="https://github.com/gggina/gitbook-scrapbook/tree/3f305fb1d206aedfa75fc7fecca00bdb565b69f4/concepts/README.md">More concepts &gt;&gt;&gt;</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-  <table>
-    <tbody>
-      <tr>
-        <td>LEARN ABOUT STACKSTATE</td>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li /><a href="concepts/4t_data_model.md">4T data model</a>
-            <li /><a href="concepts/components_and_relations.md">Components and relations</a>
-            <li /><a href="concepts/glossary.md">Glossary</a>
-            <li /><a href="concepts/">More concepts >>></a>
-          </ul>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-## Can't find what you're looking for?
+### Can't find what you're looking for?
 
 **Search for it!** Use the search bar at the top right of this page to search through the documentation pages. If you believe any documentation is missing, please let us know on the [StackState support site](https://support.stackstate.com/).
 
-## StackState support site
+### StackState support site
 
-Any questions? We love to help!
-Find our support team on the [StackState support site](https://support.stackstate.com/).
+Any questions? We love to help! Find our support team on the [StackState support site](https://support.stackstate.com/).
+

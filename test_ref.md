@@ -77,13 +77,13 @@ withNeighborsOf(components=(), levels=, direction-)
 
 | Filter | Default | Allowed values | Description |
 | :--- | :--- | :--- | :--- |
-| `components` | all | (componentFilter) | The component\(s\) for which the neighbors will be returned, see [Component filters](test_ref.md). |
+| `components` | all | \(componentFilter\) | The component\(s\) for which the neighbors will be returned, see [Component filters](test_ref.md). |
 | `levels` | 1 | all, \[1:14\] | The number of levels to include in the output. Use **all** to display all available levels \(maximum 15\) |
-| `direction` | both | up, down, both | **up -** only components that depend on the named component\(s\) will be added <br>**down -** only dependencies of the named component\(s\) will be added <br>**both -** components that depend on and dependencies of the named component\(s\) will be added. |
+| `direction` | both | up, down, both | **up -** only components that depend on the named component\(s\) will be added  **down -** only dependencies of the named component\(s\) will be added  **both -** components that depend on and dependencies of the named component\(s\) will be added. |
 
 #### Examples
 
-```
+```text
 # Select all components in the application layer that have
 # a healthstate of either "CRITICAL" or "DEVIATING".
 # Also include components with names "appA" or "appB" and their neighbors.
@@ -96,3 +96,4 @@ layer = "application"
 ### withCauseOf `DEPRECATED`
 
 This functionality is deprecated. It has been replaced by the **Root Cause Analysis** section in the visulaizer. The construct will be parsed, but will not produce any additional components.
+

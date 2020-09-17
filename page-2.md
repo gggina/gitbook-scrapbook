@@ -2,11 +2,9 @@
 description: 'Hello world, Gina!'
 ---
 
-# Initial page
+# page 2
 
-
-
-
+## Initial page
 
 {% hint style="danger" %}
 BRANCH RENAMED: g4.0
@@ -16,13 +14,13 @@ BRANCH RENAMED: g4.0
 BRANCH STARTED AS: latest
 {% endhint %}
 
-# page 2
+## page 2
 
 hello page2
 
 testext
 
-
-| col1| col2|
-|:---|:---|
+| col1 | col2 |
+| :--- | :--- |
 | `this code` | `something.before:$VERSION` |
+
