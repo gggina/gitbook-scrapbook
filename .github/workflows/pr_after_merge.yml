@@ -4,7 +4,8 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ g4.1 ]
+    branches-ignore:
+      - master
 
 jobs:
   auto-pull-request:
