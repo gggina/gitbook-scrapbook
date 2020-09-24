@@ -4,9 +4,9 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ "g4.1" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "g4.1" ]
 
 jobs:
   auto-pull-request:
@@ -17,4 +17,4 @@ jobs:
         uses: vsoch/pull-request-action@1.0.6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PULL_REQUEST_BRANCH: "g4.1"
+          PULL_REQUEST_BRANCH: master
