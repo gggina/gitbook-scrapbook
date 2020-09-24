@@ -24,5 +24,3 @@ jobs:
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_TITLE: "New changes merged to live site latest branch"
           PULL_REQUEST_REVIEWERS: "gggina" 
-        - name: Echo something
-          echo "Something gggina action"
