@@ -23,4 +23,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TEST_ACTION_SECRET }}
           PULL_REQUEST_BRANCH: "master"
           PULL_REQUEST_TITLE: "New changes merged to live site latest branch"
-          PULL_REQUEST_REVIEWERS: "gggina" 
