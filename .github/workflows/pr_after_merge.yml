@@ -15,6 +15,7 @@ jobs:
       - name: pull-request-action
         uses: vsoch/pull-request-action@1.0.6
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_BRANCH: master
           PULL_REQUEST_TITLE: "[AUTOMATED] Update from g4.1"
           PULL_REQUEST_REVIEWERS: "gggina"  
