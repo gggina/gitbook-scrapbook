@@ -4,6 +4,8 @@ description: 'Hello world, Gina!'
 
 # Introduction
 
+## MASTER is best
+
 {% hint style="danger" %}
 NEW BRANCH FROM master NAMED: g4.1
 {% endhint %}
