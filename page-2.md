@@ -22,20 +22,13 @@ testext
 
 | col1 | col2 |
 | :--- | :--- |
-| `this code` |
+| `this code` |  |
 
+adding some testext `something.before:$VERSION` \|
 
+WHy won't this work??? tertrdgsdgdf
 
+asdfasdfasdfdsafasdfsd asdfasdfasdfdsafasdfsd
 
-adding some testext
- `something.before:$VERSION` |
+test test
 
-WHy won't this work???
-tertrdgsdgdf
-
-asdfasdfasdfdsafasdfsd
-asdfasdfasdfdsafasdfsd
-
-
-test
-test
