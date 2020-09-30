@@ -18,7 +18,7 @@ test test test
 
 > hello
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="" host="" path="" %}
 {% api-method-summary %}
 test method
 {% endapi-method-summary %}
@@ -61,4 +61,3 @@ wer
 Changing the first page change again
 
 new commit and push
-
