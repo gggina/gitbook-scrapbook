@@ -4,8 +4,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches-ignore:
-      - master
+    branches: [ g4.1 ]
 
 jobs:
   auto-pull-request:
@@ -18,4 +17,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PULL_REQUEST_BRANCH: master
           PULL_REQUEST_TITLE: "[AUTOMATED] Update from g4.1"
-          PULL_REQUEST_REVIEWERS: "gggina"  
+          PULL_REQUEST_REVIEWERS: "gggina"
