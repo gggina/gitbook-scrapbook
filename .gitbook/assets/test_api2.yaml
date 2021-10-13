@@ -1,0 +1,1076 @@
+openapi: 3.0.3
+info:
+  description: StackState's API specification
+  version: 0.0.2
+  title: StackState API
+  contact:
+    name: StackState
+    email: info@stackstate.com
+    url: "https://stackstate.com"
+paths:
+  /user/profile:
+    get:
+      tags:
+        - userProfile
+      description: ""
+      operationId: getCurrentUserProfile
+      responses:
+        "200":
+          $ref: "#/components/responses/userProfile"
+        "400":
+          description: Get User Profile Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserNotFoundError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+    put:
+      tags:
+        - userProfile
+      description: ""
+      operationId: saveCurrentUserProfile
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserProfile"
+      responses:
+        "200":
+          $ref: "#/components/responses/userProfile"
+        "400":
+          description: Save User Profile Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserProfileSaveError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /user/profile/tokens:
+    get:
+      tags:
+        - apiToken
+      description: ""
+      operationId: getCurrentUserApiTokens
+      responses:
+        "200":
+          $ref: "#/components/responses/apiTokens"
+        "400":
+          description: ""
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserNotFoundError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /events:
+    get:
+      tags:
+        - event
+      description: "This API returns you a list of events that exist for topology and time selections."
+      operationId: getEvents
+      parameters:
+        - name: startTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: endTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: topologyQuery
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: rootCauseMode
+          in: query
+          schema:
+            $ref: "#/components/schemas/RootCauseMode"
+        - name: playHeadTimestampMs
+          in: query
+          schema:
+            type: integer
+            format: instant
+        - name: eventTypes
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: limit
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: eventCategories
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventSources
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventTags
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            $ref: "#/components/schemas/EventCursor"
+      responses:
+        "200":
+          $ref: "#/components/responses/events"
+        "422":
+          description: Get Events Elastic Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventsError"
+        "400":
+          description: Get Events Topology Overflow Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyOverflowError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /events/types:
+    get:
+      tags:
+        - event
+      description: "This API returns a list of event types for a certain query"
+      operationId: getEventTypes
+      parameters:
+        - name: startTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: endTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: topologyQuery
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: rootCauseMode
+          in: query
+          schema:
+            $ref: "#/components/schemas/RootCauseMode"
+        - name: playHeadTimestampMs
+          in: query
+          schema:
+            type: integer
+            format: instant
+        - name: eventTypes
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: limit
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: eventCategories
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventSources
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventTags
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: match
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/eventSuggestions"
+        "422":
+          description: Get Events Elastic Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventsError"
+        "400":
+          description: Get Events Topology Overflow Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyOverflowError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /events/sources:
+    get:
+      tags:
+        - event
+      operationId: getEventSources
+      description: "This API returns a list of event sources"
+      parameters:
+        - name: startTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: endTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: topologyQuery
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: rootCauseMode
+          in: query
+          schema:
+            $ref: "#/components/schemas/RootCauseMode"
+        - name: playHeadTimestampMs
+          in: query
+          schema:
+            type: integer
+            format: instant
+        - name: eventTypes
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: limit
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: eventCategories
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventSources
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventTags
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: match
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/eventSuggestions"
+        "422":
+          description: Get Events Elastic Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventsError"
+        "400":
+          description: Get Events Topology Overflow Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyOverflowError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /events/tags:
+    get:
+      tags:
+        - event
+      description: "This API returns a list of tags that exist in events"
+      operationId: getEventTags
+      parameters:
+        - name: startTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: endTimestampMs
+          in: query
+          required: true
+          schema:
+            type: integer
+            format: instant
+        - name: topologyQuery
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: rootCauseMode
+          in: query
+          schema:
+            $ref: "#/components/schemas/RootCauseMode"
+        - name: playHeadTimestampMs
+          in: query
+          schema:
+            type: integer
+            format: instant
+        - name: eventTypes
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: limit
+          in: query
+          required: true
+          schema:
+            type: integer
+        - name: eventCategories
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventSources
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: eventTags
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+        - name: match
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          $ref: "#/components/responses/eventSuggestions"
+        "422":
+          description: Get Events Elastic Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/EventsError"
+        "400":
+          description: Get Events Topology Overflow Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyOverflowError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
+  /synchronization/health/streams:
+    get:
+      tags:
+        - healthSynchronization
+      description: Status overview of the health synchronization streams
+      operationId: getHealthSynchronizationStreamsOverview
+      responses:
+        "200":
+          description: List of existing health streams
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/StreamList"
+  /synchronization/health/stream/{healthStreamUrn}/status:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+    get:
+      tags:
+        - healthSynchronization
+      description: Status overview of a single health synchronization stream
+      operationId: getHealthSynchronizationStreamStatus
+      responses:
+        "200":
+          description: Status data
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStreamStatus"
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthStreamError"
+  /synchronization/health/stream/{healthStreamUrn}:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+    delete:
+      tags:
+        - healthSynchronization
+      description: Delete a health synchronization stream. Deletion will not be immediate
+      operationId: deleteHealthSynchronizationStream
+      responses:
+        "204":
+          description: Return ok (but no content)
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthStreamError"
+  /synchronization/health/stream/{healthStreamUrn}/substreams:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+    get:
+      tags:
+        - healthSynchronization
+      description: Overview of all substreams in a certain health stream
+      operationId: getHealthSynchronizationSubStreamOverview
+      responses:
+        "200":
+          description: List of substreams
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SubStreamList"
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthStreamError"
+  /synchronization/health/stream/{healthStreamUrn}/topologyMatches:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+    get:
+      tags:
+        - healthSynchronization
+      description: Overview of checkstates matched to topology on the main strea,
+      operationId: getHealthSynchronizationStreamTopologyMatches
+      responses:
+        "200":
+          description: Topology matches
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyMatchResult"
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthSubStreamError"
+  /synchronization/health/stream/{healthStreamUrn}/substream/{healthSyncSubStreamId}/status:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+      - $ref: "#/components/parameters/healthSyncSubStreamId"
+    get:
+      tags:
+        - healthSynchronization
+      description: Status overview of a single health synchronization sub stream
+      operationId: getHealthSynchronizationSubStreamStatus
+      responses:
+        "200":
+          description: Sub stream status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthSubStreamStatus"
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthSubStreamError"
+  /synchronization/health/stream/{healthStreamUrn}/substream/{healthSyncSubStreamId}/topologyMatches:
+    parameters:
+      - $ref: "#/components/parameters/healthStreamUrn"
+      - $ref: "#/components/parameters/healthSyncSubStreamId"
+    get:
+      tags:
+        - healthSynchronization
+      description: Overview of checkstates matched to topology on the main strea,
+      operationId: getHealthSynchronizationSubStreamTopologyMatches
+      responses:
+        "200":
+          description: Topology matches for a specified sub stream
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/TopologyMatchResult"
+        "400":
+          $ref: "#/components/responses/urnBadRequest"
+        "404":
+          $ref: "#/components/responses/healthSubStreamError"
+
+externalDocs:
+  description: Documentation
+  url: "https://docs.stackstate.com/"
+components:
+  responses:
+    userProfile:
+      description: User Profile
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/UserProfile"
+    apiTokens:
+      description: Api Token
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "#/components/schemas/ApiToken"
+    internalServerError:
+      description: Internal Server Error
+    events:
+      description: Event API
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/EventItemsWithTotal"
+    eventSuggestions:
+      description: Event field suggestions
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              type: string
+    urnBadRequest:
+      description: "Bad request when specifying an invalid identifier"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/InvalidUrn"
+    healthStreamError:
+      description: "Error when retrieving health stream"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/HealthStreamNotFound"
+    healthSubStreamError:
+      description: "Error when retrieving health sub stream"
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/HealthSubStreamError"
+  parameters:
+    healthStreamUrn:
+      in: path
+      name: healthStreamUrn
+      schema:
+        type: string
+      required: true
+      description: Urn of the health stream.
+    healthSyncSubStreamId:
+      in: path
+      name: healthSyncSubStreamId
+      required: true
+      schema:
+        type: string
+      description: Health synchronization sub stream id.
+  schemas:
+    UserNameMismatchError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - UserNameMismatchError
+        name:
+          type: string
+      required:
+        - name
+        - _type
+    UserNotLoggedInError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - UserNotLoggedInError
+      required:
+        - _type
+    UserNotFoundError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - UserNotFoundError
+        name:
+          type: string
+      required:
+        - name
+        - _type
+    UserProfileSaveError:
+      discriminator:
+        propertyName: _type
+      oneOf:
+        - $ref: "#/components/schemas/UserNameMismatchError"
+        - $ref: "#/components/schemas/UserNotFoundError"
+        - $ref: "#/components/schemas/UserNotLoggedInError"
+      required:
+        - _type
+    UserProfile:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        lastUpdateTimestamp:
+          type: integer
+          format: int64
+          readOnly: true
+        name:
+          type: integer
+        description:
+          type: string
+        identifier:
+          type: string
+        starredViews:
+          type: array
+          items:
+            type: integer
+            format: int64
+        ownedBy:
+          type: string
+      required:
+        - name
+    StreamListItem:
+      type: object
+      properties:
+        urn:
+          type: string
+        subStreams:
+          type: integer
+      required:
+        - urn
+        - subStreams
+    StreamList:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/StreamListItem"
+      required:
+        - items
+    SubStreamListItem:
+      type: object
+      properties:
+        subStreamId:
+          type: string
+        repeatIntervalMs:
+          type: integer
+        expiryIntervalMs:
+          type: integer
+        checkStateCount:
+          type: integer
+      required:
+        - subStreamId
+        - repeatIntervalMs
+        - checkStateCount
+    SubStreamList:
+      type: object
+      properties:
+        subStreams:
+          type: array
+          items:
+            $ref: "#/components/schemas/SubStreamListItem"
+      required:
+        - subStreams
+    MetricBucketValue:
+      type: object
+      properties:
+        value:
+          type: number
+          format: double
+    MetricBucketValues:
+      type: array
+      items:
+        $ref: "#/components/schemas/MetricBucketValue"
+    HealthStreamMetrics:
+      type: object
+      properties:
+        bucketSizeSeconds:
+          type: integer
+        latencySeconds:
+          $ref: "#/components/schemas/MetricBucketValues"
+        messagePerSecond:
+          $ref: "#/components/schemas/MetricBucketValues"
+        createsPerSecond:
+          $ref: "#/components/schemas/MetricBucketValues"
+        updatesPerSecond:
+          $ref: "#/components/schemas/MetricBucketValues"
+        deletesPerSecond:
+          $ref: "#/components/schemas/MetricBucketValues"
+      required:
+        - bucketSizeSeconds
+    UnmatchedCheckState:
+      type: object
+      properties:
+        checkStateId:
+          type: string
+        topologyElementIdentifier:
+          type: string
+      required:
+        - checkStateId
+        - topologyElementIdentifier
+    MultipleMatchesCheckState:
+      type: object
+      properties:
+        checkStateId:
+          type: string
+        topologyElementIdentifier:
+          type: string
+        matchCount:
+          type: integer
+      required:
+        - checkStateId
+        - topologyElementIdentifier
+        - matchCount
+    TopologyMatchResult:
+      type: object
+      properties:
+        matchedCheckStates:
+          type: integer
+        unmatchedCheckStates:
+          type: array
+          items:
+            $ref: "#/components/schemas/UnmatchedCheckState"
+        multipleMatchesCheckStates:
+          type: array
+          items:
+            $ref: "#/components/schemas/MultipleMatchesCheckState"
+      required:
+        - matchedCheckStates
+        - unmatchedCheckStates
+        - multipleMatchesCheckStates
+    HealthStreamError:
+      type: object
+      properties:
+        errorCode:
+          type: string
+        level:
+          type: string
+        error:
+          type: string
+        count:
+          type: integer
+      required:
+        - errorCode
+        - level
+        - error
+        - count
+    HealthStreamErrors:
+      type: array
+      items:
+        $ref: "#/components/schemas/HealthStreamError"
+    HealthSubStreamStatus:
+      type: object
+      properties:
+        errors:
+          $ref: "#/components/schemas/HealthStreamErrors"
+        metrics:
+          $ref: "#/components/schemas/HealthStreamMetrics"
+        repeatIntervalMs:
+          type: integer
+        expiryIntervalMs:
+          type: integer
+        checkStateCount:
+          type: integer
+      required:
+        - metrics
+        - repeatIntervalMs
+        - checkStateCount
+    HealthStreamStatus:
+      type: object
+      properties:
+        partition:
+          type: integer
+        recoverMessage:
+          type: string
+        globalErrors:
+          $ref: "#/components/schemas/HealthStreamErrors"
+        aggregateMetrics:
+          $ref: "#/components/schemas/HealthStreamMetrics"
+        mainStreamStatus:
+          $ref: "#/components/schemas/HealthSubStreamStatus"
+      required:
+        - partition
+        - aggregateMetrics
+    InvalidUrn:
+      type: object
+      properties:
+        urn:
+          type: string
+        message:
+          type: string
+      required:
+        - urn
+        - message
+    HealthStreamNotFound:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - HealthStreamNotFound
+        urn:
+          type: string
+      required:
+        - urn
+        - _type
+    HealthSubStreamNotFound:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - HealthSubStreamNotFound
+        urn:
+          type: string
+        subStreamId:
+          type: string
+      required:
+        - urn
+        - _type
+    HealthSubStreamError:
+      discriminator:
+        propertyName: _type
+      oneOf:
+        - $ref: "#/components/schemas/HealthStreamNotFound"
+        - $ref: "#/components/schemas/HealthSubStreamNotFound"
+      required:
+        - _type
+    ApiToken:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        lastUpdateTimestamp:
+          type: integer
+          format: int64
+          readOnly: true
+        name:
+          type: string
+        description:
+          type: string
+        token:
+          type: string
+      required:
+        - name
+        - token
+    SourceLink:
+      type: object
+      properties:
+        title:
+          type: string
+        url:
+          type: string
+      required:
+        - title
+        - url
+    EventTag:
+      type: object
+      properties:
+        key:
+          type: string
+        value:
+          type: string
+      required:
+        - key
+        - value
+    StructValue:
+      type: string
+    StructType:
+      type: object
+      additionalProperties:
+        $ref: "#/components/schemas/StructValue"
+    EventCategory:
+      type: string
+      enum:
+        - Changes
+        - Alerts
+        - Anomalies
+        - Activities
+        - Others
+    TopologyEvent:
+      type: object
+      properties:
+        identifier:
+          type: string
+        sourceIdentifier:
+          type: string
+        elementIdentifiers:
+          type: array
+          items:
+            type: string
+        elementName:
+          type: string
+        elementId:
+          type: integer
+          format: int64
+        source:
+          type: string
+        category:
+          $ref: "#/components/schemas/EventCategory"
+        description:
+          type: string
+        name:
+          type: string
+        sourceLinks:
+          type: array
+          items:
+            $ref: "#/components/schemas/SourceLink"
+        data:
+          $ref: "#/components/schemas/StructType"
+        eventType:
+          type: string
+        eventTime:
+          type: integer
+          format: int64
+        processedTime:
+          type: integer
+          format: int64
+        tags:
+          type: array
+          items:
+            $ref: "#/components/schemas/EventTag"
+      required:
+        - name
+        - identifier
+        - elementName
+        - elementId
+        - source
+        - category
+        - eventType
+        - eventTime
+        - processedTime
+        - sourceLinks
+        - tags
+        - elementIdentifiers
+        - data
+    StqlParsingError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - StqlParsingError
+        message:
+          type: string
+      required:
+        - _type
+        - message
+    RootCauseParsingError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - RootCauseParsingError
+        message:
+          type: string
+      required:
+        - _type
+        - message
+    ElasticSearchError:
+      type: object
+      properties:
+        _type:
+          type: string
+          enum:
+            - ElasticSearchError
+        message:
+          type: string
+      required:
+        - _type
+        - message
+    EventsError:
+      discriminator:
+        propertyName: _type
+      oneOf:
+        - $ref: "#/components/schemas/ElasticSearchError"
+        - $ref: "#/components/schemas/RootCauseParsingError"
+        - $ref: "#/components/schemas/StqlParsingError"
+      required:
+        - _type
+    TopologyOverflowError:
+      type: object
+      properties:
+        maxSize:
+          type: integer
+      required:
+        - maxSize
+    EventItemsWithTotal:
+      type: object
+      properties:
+        items:
+          type: array
+          items:
+            $ref: "#/components/schemas/TopologyEvent"
+        total:
+          type: integer
+      required:
+        - items
+        - total
+    EventCursor:
+      type: object
+      properties:
+        lastEventTimestampMs:
+          type: integer
+          format: int64
+        lastEventId:
+          type: string
+      required:
+        - lastEventTimestampMs
+        - lastEventId
+    RootCauseMode:
+      type: string
+      enum:
+        - NoCause
+        - CauseOnly
+        - FullCauseTree
