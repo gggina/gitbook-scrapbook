@@ -5,6 +5,6 @@
 {% endswagger %}
 
 
-{% swagger src="../.gitbook/assets/test_api2 (1).yaml" %}
-[test_api.yaml](<../.gitbook/assets/test_api2 (1).yaml>)
+{% swagger src="../.gitbook/assets/test_api.yaml" %}
+[test_api.yaml](<../.gitbook/assets/test_api.yaml>)
 {% endswagger %}
