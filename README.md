@@ -1,5 +1,5 @@
 ---
-description: 'Hello world, Gina!'
+description: Hello world, Gina!
 ---
 
 # Introduction
@@ -8,7 +8,7 @@ description: 'Hello world, Gina!'
 BRANCH STARTED AS: latest
 {% endhint %}
 
-| x |  |
-| :--- | :--- |
+| x |   |
+| - | - |
+| x |   |
 | x | y |
-

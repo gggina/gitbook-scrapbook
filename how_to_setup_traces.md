@@ -1,14 +1,6 @@
----
-title: STQL reference
-kind: Documentation
-aliases:
-  - /reference/stql_reference/
-listorder: 1
----
-
 # How to set up traces
 
-## STQL \(StackState Query Language\)
+## STQL (StackState Query Language)
 
 {% hint style="danger" %}
 BRANCH RENAMED: g4.0
@@ -44,4 +36,3 @@ Full configuration details for each available StackState Agent V2 integration ar
 3. Click on the StackState Agent V2 integration you want to configure and follow the instructions provided to start receiving trace data.
 
 ### Still not able to see traces?
-

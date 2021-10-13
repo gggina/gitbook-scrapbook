@@ -1,5 +1,5 @@
 ---
-description: 'Hello world, Gina!'
+description: Hello world, Gina!
 ---
 
 # page 2
@@ -20,7 +20,6 @@ hello page2
 
 testext
 
-| col1 | col2 |
-| :--- | :--- |
+| col1        | col2                        |
+| ----------- | --------------------------- |
 | `this code` | `something.before:$VERSION` |
-
