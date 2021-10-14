@@ -9,6 +9,22 @@ info:
     url: "https://stackstate.com"
 paths:
   /user/profile:
+    get:
+      tags:
+        - userProfile
+      description: ""
+      operationId: getCurrentUserProfile
+      responses:
+        "200":
+          $ref: "#/components/responses/userProfile"
+        "400":
+          description: Get User Profile Error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserNotFoundError"
+        "500":
+          $ref: "#/components/responses/internalServerError"
     put:
       tags:
         - userProfile
